@@ -49,3 +49,12 @@ and run
 ```bash
 .\ltl2dstar.exe --ltl2nba=spin:.\ltl2ba.exe --automata=rabin --output-format=hoa formula.ltl rabin.hoa
 ```
+
+To get graph:
+
+```bash
+ .\ltl2dstar.exe --ltl2nba=spin:.\ltl2ba.exe --automata=rabin --output-format=dot formula.ltl rabin.dot
+```
+```bash
+& "C:\Program Files\Graphviz\bin\dot.exe" -Tpdf rabin.dot -o rabin.pdf
+```
