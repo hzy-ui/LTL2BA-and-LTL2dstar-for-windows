@@ -43,6 +43,10 @@ To get rabin automata, create ltl file
 cmd /c "echo G F a>formula.ltl"
 ```
 
+```bash
+cmd /c "echo ^& ^& G F gather G F recharge G F upload>formula.ltl"
+```
+
 and run 
 
 
